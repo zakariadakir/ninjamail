@@ -16,6 +16,18 @@
   --charcoal-gray: #9f9f9f;
   --light-gray: #dbdbdb;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--white);
+}
+::-webkit-scrollbar-thumb {
+  background-color: #4ba87d7f;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--sea-green);
+}
 * {
   padding: 0;
   margin: 0;
@@ -24,7 +36,7 @@
 body {
   max-width: 100dvw;
   min-height: 100dvh;
-  overflow-x: hidden !important;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -53,7 +65,6 @@ h2 {
 h1 {
   font-size: clamp(36px, 5.36vw, 59px);
   font-weight: 900;
-  /* line-height: 71px; */
 }
 .main-container {
   max-width: calc(1100px + ((var(--padding)) * 2));
@@ -166,7 +177,7 @@ h1 {
   padding: clamp(6px, 1vw, 11px) clamp(13px, 1.9vw, 21px);
 }
 .background{
-  background: url(./imgs/background.png) center/contain; 
+  background: url(./imgs/background.png) top center; 
 }
 .hero {
   margin: 200px auto clamp(14px, 6.81vw, 75px);
