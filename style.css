@@ -176,8 +176,8 @@ h1 {
 .header-button {
   padding: clamp(6px, 1vw, 11px) clamp(13px, 1.9vw, 21px);
 }
-.background{
-  background: url(./imgs/background.png) top center; 
+.background {
+  background: url(./imgs/background.png) top center;
 }
 .hero {
   margin: 200px auto clamp(14px, 6.81vw, 75px);
@@ -207,10 +207,12 @@ h1 {
   background-color: var(--sea-green);
   color: var(--white);
 }
-.video{
-  background-color: #F7F7F7;
+.video {
+  background-color: #f7f7f7;
+  position: relative;
+  z-index: -1;
 }
-.video-container{
+.video-container {
   padding: 30px var(--padding);
 }
 .video-bg {
@@ -226,6 +228,8 @@ h1 {
   background-color: #caeac7;
   padding: 50px var(--padding);
   margin: 0 auto clamp(54px, 6.81vw, 75px);
+  position: relative;
+  z-index: -1;
 }
 .source-container {
   min-height: 533px;
@@ -419,7 +423,7 @@ h1 {
 .sub-footer ul {
   gap: 35px;
 }
-@media only screen and (max-width: 1128px) {
+@media (max-width: 1128px) {
   .source-content {
     flex-grow: 1;
     text-align: center;
@@ -428,7 +432,7 @@ h1 {
     width: 100%;
   }
 }
-@media only screen and (max-width: 635px) {
+@media (max-width: 635px) {
   .nav-button nav {
     display: none;
   }
@@ -440,7 +444,7 @@ h1 {
     margin-bottom: 200px;
   }
 }
-@media only screen and (max-width: 576px) {
+@media (max-width: 576px) {
   .top-footer {
     flex-direction: column;
   }
@@ -451,7 +455,7 @@ h1 {
     flex-direction: column;
   }
 }
-@media only screen and (max-width: 481px) {
+@media (max-width: 481px) {
   .brands-logo-wrapper a:nth-child(1) {
     order: 3;
   }
@@ -468,7 +472,7 @@ h1 {
     order: 2;
   }
 }
-@media only screen and (max-width: 300px) {
+@media (max-width: 300px) {
   .header-container {
     justify-content: center;
   }
